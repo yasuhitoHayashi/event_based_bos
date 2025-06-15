@@ -1,0 +1,308 @@
+         1792160 function calls (1691379 primitive calls) in 191.741 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1569 to 300 due to restriction <300>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      9/4    0.016    0.002  191.718   47.929 backend_agg.py:206(get_text_width_height_descent)
+        4    1.273    0.318  191.621   47.905 patch_eklt_pyramid2.py:211(run_estimation_per_scale)
+      770    2.210    0.003  112.946    0.147 patch_eklt_pyramid2.py:368(_objective_scipy)
+      770    0.001    0.000   80.844    0.105 generative_max_likelihood.py:452(_calculate_cost)
+ 3080/770    0.006    0.000   80.843    0.105 base.py:45(wrapper)
+ 3080/770    0.003    0.000   80.841    0.105 base.py:32(wrapper)
+      770    0.030    0.000   80.840    0.105 hybrid.py:46(calculate)
+     2310   76.490    0.033   76.490    0.033 {built-in method torch._C._linalg.linalg_norm}
+      770    0.001    0.000   76.165    0.099 flow_norm_pxy.py:25(calculate)
+      770    0.003    0.000   76.164    0.099 flow_norm.py:45(calculate_torch)
+      770    0.010    0.000   75.134    0.098 _tensor.py:592(backward)
+      770    0.007    0.000   75.052    0.097 __init__.py:243(backward)
+      770    0.003    0.000   75.029    0.097 graph.py:815(_engine_run_backward)
+      770   75.025    0.097   75.025    0.097 {method 'run_backward' of 'torch._C._EngineBase' objects}
+      770    3.167    0.004   25.110    0.033 patch_eklt_pyramid2.py:345(_make_prediction_torch)
+     1540    6.240    0.004   18.406    0.012 frame_utils.py:56(warp_image_forward)
+     1540    0.003    0.000   11.585    0.008 functional.py:4867(grid_sample)
+     1540   11.582    0.008   11.582    0.008 {built-in method torch.grid_sampler}
+     1540    0.041    0.000    4.034    0.003 patch_eklt_dependent.py:178(_extrapolate_dense_flow_from_estimates)
+      770    0.001    0.000    3.644    0.005 image_gradient.py:37(calculate)
+      770    1.113    0.001    3.642    0.005 image_gradient.py:60(calculate_torch)
+     1540    0.248    0.000    2.686    0.002 patch_eklt_pyramid2.py:291(_get_patch_flow)
+     3853    0.022    0.000    2.637    0.001 functional.py:387(resize)
+     3853    0.013    0.000    2.564    0.001 _functional_tensor.py:441(resize)
+     3080    0.051    0.000    2.540    0.001 patch_eklt.py:173(interpolate_dense_flow_from_patch_tensor)
+     3853    0.016    0.000    2.525    0.001 functional.py:4453(interpolate)
+     3853    2.494    0.001    2.494    0.001 {built-in method torch._C._nn._upsample_bilinear2d_aa}
+     1541    0.225    0.000    2.442    0.002 patch_eklt_dependent.py:259(poisson_to_flow)
+     1540    1.994    0.001    1.994    0.001 {built-in method torch.gradient}
+4623/1541    0.007    0.000    1.881    0.001 module.py:1747(_wrapped_call_impl)
+4623/1541    0.379    0.000    1.879    0.001 module.py:1755(_call_impl)
+     3850    0.013    0.000    1.733    0.000 patch_eklt_pyramid2.py:207(estimate_mask_dense)
+     3850    0.002    0.000    1.705    0.000 function_base.py:873(copy)
+     4416    1.704    0.000    1.704    0.000 {built-in method numpy.array}
+     1540    0.322    0.000    1.625    0.001 patch_eklt_dependent.py:218(_extrapolate_dense_translation_from_estimates)
+     1541    0.122    0.000    1.506    0.001 stat_utils.py:120(forward)
+     3082    0.003    0.000    1.349    0.000 conv.py:553(forward)
+     3082    0.011    0.000    1.344    0.000 conv.py:536(_conv_forward)
+     3082    1.187    0.000    1.187    0.000 {built-in method torch.conv2d}
+    19160    0.937    0.000    0.937    0.000 event_utils.py:109(crop_event)
+       18    0.000    0.000    0.749    0.042 threading.py:637(wait)
+       18    0.000    0.000    0.749    0.042 threading.py:323(wait)
+       75    0.749    0.010    0.749    0.010 {method 'acquire' of '_thread.lock' objects}
+      770    0.003    0.000    0.692    0.001 lr_scheduler.py:120(wrapper)
+      770    0.010    0.000    0.689    0.001 optimizer.py:465(wrapper)
+      770    0.007    0.000    0.639    0.001 optimizer.py:60(_use_grad)
+      770    0.004    0.000    0.629    0.001 adam.py:212(step)
+      770    0.001    0.000    0.614    0.001 optimizer.py:130(maybe_fallback)
+      770    0.208    0.000    0.613    0.001 adam.py:865(adam)
+     3081    0.541    0.000    0.541    0.000 {built-in method torch.cat}
+      770    0.092    0.000    0.466    0.001 patch_eklt_dependent.py:242(_extrapolate_dense_poisson_from_estimates)
+     1540    0.458    0.000    0.458    0.000 {built-in method torch.abs}
+      770    0.284    0.000    0.396    0.001 adam.py:344(_single_tensor_adam)
+     2310    0.392    0.000    0.392    0.000 {method 'clone' of 'torch._C.TensorBase' objects}
+      770    0.014    0.000    0.347    0.000 patch_eklt.py:238(interpolate_dense_poisson_from_patch_tensor)
+     1541    0.019    0.000    0.335    0.000 stat_utils.py:62(__init__)
+     6932    0.016    0.000    0.314    0.000 functional.py:5128(pad)
+      770    0.001    0.000    0.307    0.000 diff_norm.py:25(calculate)
+      770    0.143    0.000    0.306    0.000 diff_norm.py:47(calculate_torch)
+     6932    0.293    0.000    0.293    0.000 {built-in method torch._C._nn.pad}
+      774    0.001    0.000    0.242    0.000 _compile.py:41(inner)
+     3082    0.007    0.000    0.241    0.000 conv.py:502(__init__)
+      774    0.002    0.000    0.241    0.000 eval_frame.py:829(_fn)
+      770    0.210    0.000    0.236    0.000 optimizer.py:931(zero_grad)
+     3082    0.020    0.000    0.216    0.000 conv.py:86(__init__)
+      825    0.176    0.000    0.176    0.000 {method 'astype' of 'numpy.ndarray' objects}
+    46230    0.045    0.000    0.126    0.000 module.py:1944(__setattr__)
+      770    0.078    0.000    0.078    0.000 {built-in method torch.mean}
+324994/247944    0.040    0.000    0.077    0.000 {built-in method builtins.isinstance}
+     1540    0.065    0.000    0.065    0.000 patch_eklt_pyramid2.py:314(_get_patch_translation)
+     3082    0.004    0.000    0.055    0.000 conv.py:178(reset_parameters)
+      770    0.054    0.000    0.054    0.000 {method 'mean' of 'torch._C.TensorBase' objects}
+     3082    0.012    0.000    0.049    0.000 init.py:456(kaiming_uniform_)
+     18/2    0.000    0.000    0.040    0.020 text.py:926(get_window_extent)
+     1540    0.005    0.000    0.036    0.000 profiler.py:776(__exit__)
+        1    0.003    0.003    0.033    0.033 patch_eklt.py:271(calculate_iwe_cache)
+     4623    0.030    0.000    0.033    0.000 module.py:466(__init__)
+     1540    0.001    0.000    0.031    0.000 _ops.py:981(__call__)
+      770    0.029    0.000    0.029    0.000 {method 'sqrt' of 'torch._C.TensorBase' objects}
+      770    0.028    0.000    0.028    0.000 patch_eklt_pyramid2.py:321(_get_patch_poisson)
+    18492    0.014    0.000    0.027    0.000 utils.py:11(parse)
+    149/5    0.000    0.000    0.026    0.005 text.py:65(_get_text_metrics_with_cache)
+      8/3    0.000    0.000    0.026    0.009 text.py:73(_get_text_metrics_with_cache_impl)
+     1540    0.002    0.000    0.025    0.000 _ops.py:1035(_must_dispatch_in_python)
+     1540    0.002    0.000    0.025    0.000 functional.py:445(meshgrid)
+     1540    0.002    0.000    0.023    0.000 _pytree.py:1410(tree_any)
+     1540    0.003    0.000    0.023    0.000 profiler.py:770(__enter__)
+     1540    0.010    0.000    0.023    0.000 functional.py:542(_meshgrid)
+     1792    0.001    0.000    0.022    0.000 {built-in method builtins.any}
+     3853    0.005    0.000    0.021    0.000 functional.py:66(get_dimensions)
+        1    0.000    0.000    0.021    0.021 _filters.py:326(gaussian_filter)
+        2    0.000    0.000    0.021    0.010 _filters.py:257(gaussian_filter1d)
+        2    0.000    0.000    0.021    0.010 _filters.py:125(correlate1d)
+        2    0.021    0.010    0.021    0.010 {built-in method scipy.ndimage._nd_image.correlate1d}
+    40066    0.013    0.000    0.020    0.000 parameter.py:10(__instancecheck__)
+     7706    0.011    0.000    0.020    0.000 utils.py:627(_log_api_usage_once)
+     1540    0.001    0.000    0.020    0.000 _ops.py:1147(__call__)
+     9246    0.008    0.000    0.020    0.000 module.py:574(register_parameter)
+     1540    0.019    0.000    0.019    0.000 {built-in method torch._ops.profiler._record_function_enter_new}
+     5393    0.018    0.000    0.018    0.000 {method 'squeeze' of 'torch._C.TensorBase' objects}
+10780/3080    0.006    0.000    0.018    0.000 _pytree.py:1071(tree_iter)
+     56/2    0.001    0.000    0.018    0.009 text.py:358(_get_layout)
+      770    0.018    0.000    0.018    0.000 {method 'lerp_' of 'torch._C.TensorBase' objects}
+        6    0.000    0.000    0.016    0.003 axis.py:1276(_update_ticks)
+      770    0.016    0.000    0.016    0.000 {method 'mul_' of 'torch._C.TensorBase' objects}
+    36984    0.011    0.000    0.016    0.000 parameter.py:216(__instancecheck__)
+      770    0.016    0.000    0.016    0.000 {method 'addcdiv_' of 'torch._C.TensorBase' objects}
+      770    0.015    0.000    0.015    0.000 {method 'addcmul_' of 'torch._C.TensorBase' objects}
+        1    0.000    0.000    0.015    0.015 pyplot.py:872(figure)
+        1    0.000    0.000    0.015    0.015 pyplot.py:549(new_figure_manager)
+        1    0.000    0.000    0.014    0.014 backend_bases.py:3495(new_figure_manager)
+     5390    0.014    0.000    0.014    0.000 {method 'reshape' of 'torch._C.TensorBase' objects}
+        1    0.000    0.000    0.014    0.014 backend_bases.py:3504(new_figure_manager_given_figure)
+        1    0.000    0.000    0.014    0.014 backend_bases.py:1772(new_manager)
+        1    0.000    0.000    0.014    0.014 backend_bases.py:2646(create_with_canvas)
+     3080    0.014    0.000    0.014    0.000 {built-in method torch.arange}
+        1    0.006    0.006    0.014    0.014 backend_macosx.py:151(__init__)
+     3853    0.002    0.000    0.014    0.000 _functional_tensor.py:532(_cast_squeeze_out)
+      770    0.014    0.000    0.014    0.000 {method 'add_' of 'torch._C.TensorBase' objects}
+    10017    0.014    0.000    0.014    0.000 {method 'unsqueeze' of 'torch._C.TensorBase' objects}
+        6    0.000    0.000    0.013    0.002 axis.py:1644(get_major_ticks)
+    19160    0.012    0.000    0.013    0.000 flow_patch.py:33(x_min)
+     3086    0.012    0.000    0.012    0.000 {built-in method torch.tensor}
+      770    0.008    0.000    0.012    0.000 __init__.py:89(_make_grads)
+     5441    0.003    0.000    0.012    0.000 {built-in method builtins.all}
+     3853    0.003    0.000    0.012    0.000 _functional_tensor.py:516(_cast_squeeze_in)
+    27738    0.011    0.000    0.011    0.000 module.py:1927(__getattr__)
+     6164    0.003    0.000    0.011    0.000 parameter.py:40(__new__)
+    19160    0.011    0.000    0.011    0.000 flow_patch.py:37(x_max)
+     8481    0.011    0.000    0.011    0.000 {method 'to' of 'torch._C.TensorBase' objects}
+     1540    0.011    0.000    0.011    0.000 {built-in method torch.meshgrid}
+     5404    0.011    0.000    0.011    0.000 {built-in method torch.from_numpy}
+   134781    0.011    0.000    0.011    0.000 {method 'get' of 'dict' objects}
+       22    0.000    0.000    0.011    0.000 axis.py:1585(_get_tick)
+     3082    0.002    0.000    0.011    0.000 init.py:446(_calculate_correct_fan)
+    19160    0.010    0.000    0.010    0.000 flow_patch.py:41(y_min)
+    19160    0.010    0.000    0.010    0.000 flow_patch.py:45(y_max)
+     8483    0.010    0.000    0.010    0.000 {method 'double' of 'torch._C.TensorBase' objects}
+    10980    0.003    0.000    0.010    0.000 {built-in method builtins.hasattr}
+     6164    0.009    0.000    0.009    0.000 {built-in method _make_subclass}
+     1540    0.009    0.000    0.009    0.000 {method 'permute' of 'torch._C.TensorBase' objects}
+     3080    0.003    0.000    0.009    0.000 base.py:53(get_item)
+      770    0.003    0.000    0.008    0.000 optimizer.py:160(_default_to_fused_or_foreach)
+     3082    0.005    0.000    0.008    0.000 utils.py:26(_reverse_repeat_tuple)
+     3082    0.008    0.000    0.008    0.000 {method 'uniform_' of 'torch._C.TensorBase' objects}
+     3082    0.008    0.000    0.008    0.000 {built-in method torch.empty}
+     3853    0.005    0.000    0.008    0.000 _functional_tensor.py:18(get_dimensions)
+     7706    0.005    0.000    0.008    0.000 _trace.py:1324(is_tracing)
+       22    0.000    0.000    0.008    0.000 axis.py:59(__init__)
+    12333    0.008    0.000    0.008    0.000 {built-in method torch._C._log_api_usage_once}
+     3082    0.005    0.000    0.008    0.000 init.py:345(_calculate_fan_in_and_fan_out)
+    18936    0.003    0.000    0.008    0.000 <frozen abc>:117(__instancecheck__)
+     4993    0.008    0.000    0.008    0.000 {method 'item' of 'torch._C.TensorBase' objects}
+     6160    0.002    0.000    0.007    0.000 _pytree.py:836(_is_leaf)
+    10780    0.002    0.000    0.007    0.000 _pytree.py:829(_get_node_type)
+     7704    0.003    0.000    0.007    0.000 grad_mode.py:184(__init__)
+      770    0.005    0.000    0.007    0.000 adam.py:137(_init_group)
+    53170    0.006    0.000    0.006    0.000 {method 'dim' of 'torch._C.TensorBase' objects}
+       12    0.000    0.000    0.006    0.000 axis.py:367(__init__)
+        4    0.000    0.000    0.006    0.001 pyplot.py:3830(plot)
+     1540    0.005    0.000    0.005    0.000 {built-in method torch._ops.profiler.}
+     3082    0.003    0.000    0.005    0.000 grad_mode.py:80(__enter__)
+     1540    0.003    0.000    0.005    0.000 profiler.py:759(__init__)
+    11559    0.003    0.000    0.005    0.000 functional.py:4573(<genexpr>)
+      176    0.000    0.000    0.005    0.000 markers.py:220(__init__)
+       10    0.000    0.000    0.005    0.000 axis.py:428(__init__)
+        5    0.000    0.000    0.005    0.001 pyplot.py:2783(gca)
+        5    0.000    0.000    0.005    0.001 figure.py:1708(gca)
+        1    0.000    0.000    0.005    0.005 figure.py:644(add_subplot)
+      176    0.000    0.000    0.005    0.000 markers.py:299(_set_marker)
+        1    0.000    0.000    0.005    0.005 _base.py:615(__init__)
+        1    0.000    0.000    0.005    0.005 backend_bases.py:2609(__init__)
+       18    0.000    0.000    0.005    0.000 axis.py:1606(_copy_tick_props)
+    18936    0.005    0.000    0.005    0.000 {built-in method _abc._abc_instancecheck}
+    10780    0.004    0.000    0.005    0.000 _pytree.py:818(_is_namedtuple_instance)
+        1    0.004    0.004    0.005    0.005 backend_macosx.py:118(__init__)
+    77050    0.005    0.000    0.005    0.000 {function _ParameterMeta.__instancecheck__ at 0x31b085580}
+     3081    0.005    0.000    0.005    0.000 typing.py:392(inner)
+       58    0.000    0.000    0.005    0.000 lines.py:1352(update_from)
+     3082    0.004    0.000    0.004    0.000 init.py:72(calculate_gain)
+       74    0.001    0.000    0.004    0.000 lines.py:301(__init__)
+      770    0.002    0.000    0.004    0.000 _tensor.py:1124(__format__)
+      774    0.002    0.000    0.004    0.000 lr_scheduler.py:166(step)
+  3378/58    0.002    0.000    0.004    0.000 copy.py:118(deepcopy)
+   232/58    0.000    0.000    0.004    0.000 copy.py:217(_deepcopy_dict)
+     7706    0.002    0.000    0.004    0.000 _functional_tensor.py:13(_assert_image_tensor)
+      770    0.003    0.000    0.004    0.000 optimizer.py:412(_cuda_graph_capture_health_check)
+        1    0.000    0.000    0.004    0.004 image.py:1526(imsave)
+        1    0.000    0.000    0.004    0.004 event_image_converter.py:51(create_iwe)
+      350    0.001    0.000    0.004    0.000 artist.py:1188(_update_props)
+        1    0.000    0.000    0.004    0.004 Image.py:2469(save)
+        1    0.001    0.001    0.004    0.004 event_image_converter.py:332(create_image_from_events_numpy)
+      734    0.004    0.000    0.004    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+        1    0.000    0.000    0.004    0.004 _base.py:1445(clear)
+        1    0.000    0.000    0.004    0.004 _base.py:1313(__clear)
+     1540    0.004    0.000    0.004    0.000 optimizer.py:177(<genexpr>)
+        1    0.000    0.000    0.004    0.004 PngImagePlugin.py:1304(_save)
+      770    0.001    0.000    0.003    0.000 optimizer.py:89(_get_value)
+        1    0.000    0.000    0.003    0.003 ImageFile.py:624(_save)
+        1    0.000    0.000    0.003    0.003 ImageFile.py:652(_encode_tile)
+        1    0.003    0.003    0.003    0.003 {GaussianBlur}
+     6932    0.002    0.000    0.003    0.000 __init__.py:1438(are_deterministic_algorithms_enabled)
+     7729    0.003    0.000    0.003    0.000 {method 'startswith' of 'str' objects}
+        1    0.003    0.003    0.003    0.003 {method 'encode' of 'ImagingEncoder' objects}
+     4623    0.003    0.000    0.003    0.000 {built-in method torch._C._get_tracing_state}
+    15410    0.003    0.000    0.003    0.000 utils.py:32(<genexpr>)
+       41    0.001    0.000    0.003    0.000 backend_agg.py:248(_prepare_font)
+      294    0.000    0.000    0.003    0.000 artist.py:1226(_internal_update)
+        1    0.003    0.003    0.003    0.003 {built-in method set_icon}
+      770    0.003    0.000    0.003    0.000 {built-in method torch.ones_like}
+      201    0.000    0.000    0.003    0.000 artist.py:146(<lambda>)
+     3082    0.003    0.000    0.003    0.000 grad_mode.py:75(__init__)
+        2    0.002    0.001    0.003    0.001 patch_eklt.py:138(interpolate_dense_flow_from_patch_numpy)
+      201    0.000    0.000    0.003    0.000 artist.py:1237(set)
+29694/29684    0.003    0.000    0.003    0.000 {built-in method builtins.len}
+       56    0.000    0.000    0.003    0.000 text.py:104(__init__)
+        1    0.000    0.000    0.003    0.003 offsetbox.py:820(draw)
+     7704    0.003    0.000    0.003    0.000 {built-in method torch._C._set_grad_enabled}
+     7706    0.003    0.000    0.003    0.000 {built-in method torch._C._is_tracing}
+     3926    0.002    0.000    0.003    0.000 enum.py:202(__get__)
+     3083    0.002    0.000    0.003    0.000 __init__.py:16(is_numpy)
+     8315    0.002    0.000    0.003    0.000 {built-in method builtins.getattr}
+     3082    0.001    0.000    0.003    0.000 grad_mode.py:84(__exit__)
+       56    0.001    0.000    0.002    0.000 lines.py:758(draw)
+     7706    0.002    0.000    0.002    0.000 functional.py:4389(_is_integer)
+      177    0.000    0.000    0.002    0.000 {method 'max' of 'numpy.ndarray' objects}
+      177    0.000    0.000    0.002    0.000 _methods.py:39(_amax)
+     1540    0.001    0.000    0.002    0.000 _pytree.py:603(_dict_flatten)
+      479    0.000    0.000    0.002    0.000 copy.py:247(_reconstruct)
+     6164    0.002    0.000    0.002    0.000 {method 'size' of 'torch._C.TensorBase' objects}
+        1    0.000    0.000    0.002    0.002 generative_max_likelihood.py:194(_set_frame)
+    36979    0.002    0.000    0.002    0.000 _jit_internal.py:101(is_scripting)
+     3853    0.002    0.000    0.002    0.000 functional.py:353(_compute_resized_output_size)
+        2    0.000    0.000    0.002    0.001 axis.py:2223(_get_tick_boxes_siblings)
+    12328    0.002    0.000    0.002    0.000 {built-in method math.sqrt}
+        4    0.000    0.000    0.002    0.001 axis.py:534(__get__)
+    12333    0.002    0.000    0.002    0.000 {method 'values' of 'collections.OrderedDict' objects}
+     1540    0.002    0.000    0.002    0.000 _ops.py:1037(<lambda>)
+        2    0.002    0.001    0.002    0.001 {Sobel}
+        1    0.000    0.000    0.002    0.002 axis.py:2438(_update_label_position)
+     7706    0.002    0.000    0.002    0.000 _functional_tensor.py:9(_is_tensor_a_torch_image)
+        8    0.000    0.000    0.002    0.000 offsetbox.py:54(get_offset)
+     3082    0.001    0.000    0.002    0.000 _contextlib.py:154(__new__)
+        8    0.000    0.000    0.002    0.000 offsetbox.py:291(get_offset)
+        2    0.000    0.000    0.002    0.001 legend.py:717(_findoffset)
+        2    0.000    0.000    0.002    0.001 legend.py:1147(_find_best_position)
+       60    0.000    0.000    0.002    0.000 text.py:157(_reset_visual_defaults)
+        2    0.001    0.000    0.002    0.001 event_image_converter.py:503(bilinear_vote_numpy)
+        4    0.000    0.000    0.002    0.000 patch_eklt_pyramid2.py:329(_make_measured_increment)
+     1540    0.001    0.000    0.002    0.000 _VF.py:27(__getattr__)
+      770    0.002    0.000    0.002    0.000 {method '__format__' of 'float' objects}
+     9246    0.002    0.000    0.002    0.000 module.py:1945(remove_from)
+     9614    0.002    0.000    0.002    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.002    0.002 pyplot.py:3626(legend)
+        1    0.000    0.000    0.002    0.002 _axes.py:218(legend)
+        1    0.000    0.000    0.002    0.002 axis.py:2665(_update_label_position)
+     2757    0.002    0.000    0.002    0.000 {method 'update' of 'dict' objects}
+  881/797    0.000    0.000    0.002    0.000 {built-in method builtins.next}
+        1    0.000    0.000    0.002    0.002 legend.py:354(__init__)
+     3438    0.001    0.000    0.002    0.000 __init__.py:778(__getitem__)
+        8    0.000    0.000    0.001    0.000 axis.py:946(set_tick_params)
+        2    0.000    0.000    0.001    0.001 axis.py:1115(set_clip_path)
+      831    0.001    0.000    0.001    0.000 copy.py:61(copy)
+        1    0.000    0.000    0.001    0.001 legend.py:837(_init_legend_box)
+       15    0.001    0.000    0.001    0.000 backend_agg.py:93(draw_path)
+     3850    0.001    0.000    0.001    0.000 __init__.py:380(is_compiling)
+    38320    0.001    0.000    0.001    0.000 flow_patch.py:25(h)
+        2    0.000    0.000    0.001    0.001 _base.py:3308(grid)
+        4    0.000    0.000    0.001    0.000 axis.py:1696(grid)
+       22    0.000    0.000    0.001    0.000 {built-in method builtins.sum}
+      770    0.001    0.000    0.001    0.000 _foreach_utils.py:12(_get_fused_kernels_supported_devices)
+    11556    0.001    0.000    0.001    0.000 {built-in method torch.is_grad_enabled}
+    38320    0.001    0.000    0.001    0.000 flow_patch.py:29(w)
+      304    0.000    0.000    0.001    0.000 font_manager.py:961(copy)
+        4    0.000    0.000    0.001    0.000 linalg.py:2383(norm)
+      247    0.000    0.000    0.001    0.000 fromnumeric.py:53(_wrapfunc)
+       12    0.000    0.000    0.001    0.000 ticker.py:2228(__call__)
+     6932    0.001    0.000    0.001    0.000 {built-in method torch._C._get_deterministic_algorithms}
+     1548    0.001    0.000    0.001    0.000 eval_frame.py:126(_maybe_set_eval_frame)
+        4    0.001    0.000    0.001    0.000 {method 'dot' of 'numpy.ndarray' objects}
+      901    0.000    0.000    0.001    0.000 artist.py:414(pchanged)
+       58    0.000    0.000    0.001    0.000 path.py:279(__deepcopy__)
+       46    0.000    0.000    0.001    0.000 lines.py:686(recache)
+       12    0.000    0.000    0.001    0.000 ticker.py:2232(tick_values)
+    12325    0.001    0.000    0.001    0.000 {built-in method torch._C._has_torch_function_unary}
+      579    0.001    0.000    0.001    0.000 font_manager.py:700(__hash__)
+        2    0.000    0.000    0.001    0.001 spines.py:142(get_window_extent)
+  418/397    0.000    0.000    0.001    0.000 contextlib.py:132(__enter__)
+       12    0.000    0.000    0.001    0.000 ticker.py:2159(_raw_ticks)
+      910    0.001    0.000    0.001    0.000 cbook.py:348(process)
+        4    0.001    0.000    0.001    0.000 {resize}
+       56    0.000    0.000    0.001    0.000 text.py:194(update)
+        1    0.001    0.001    0.001    0.001 shape_base.py:372(stack)
+       50    0.000    0.000    0.001    0.000 legend.py:1165(<genexpr>)
+     3438    0.000    0.000    0.001    0.000 __init__.py:698(_get)
+       38    0.000    0.000    0.001    0.000 _monitor.py:47(get_instances)
+       50    0.000    0.000    0.001    0.000 transforms.py:560(count_contains)
+      770    0.001    0.000    0.001    0.000 generative_max_likelihood.py:70(visualize_image)
+4423/4027    0.001    0.000    0.001    0.000 artist.py:315(stale)
+        1    0.000    0.000    0.001    0.001 {method 'std' of 'numpy.ndarray' objects}
+
+

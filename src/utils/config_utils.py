@@ -115,7 +115,7 @@ def save_config(save_dir: str, file_name: str, log_level: str = "INFO"):
 # Config for OpenPIV
 def load_config_openpiv(
     params_openpiv: dict, common_config: dict, save_dir: str
-) -> windef.Settings:
+) -> windef.PIVSettings:
     """Load config from dict and propagate it to OpenPIV config object.
 
     Args:
@@ -124,7 +124,7 @@ def load_config_openpiv(
     Returns:
         windef.Settings: _description_
     """
-    settings = windef.Settings()
+    settings = windef.PIVSettings()
     # Data related settings'
     # settings.filepath_images = ''  # Folder with the images to process
     settings.save_path = save_dir
